@@ -1,16 +1,27 @@
 body {
     
     background-color: rgb(238, 116, 29);
+    border: double;
+    margin: 5px;
+    
 }
 h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
 }
+
 h2 {
     text-align: center;
-    font-size: 70px;
+    font-size: 20px;
 }
-body {
-    /* background-image:("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShM9yZpvrHAWUFgStcexrjVoGvmnp-v7ipxiuw_Pms7igbcDSFIg")  */
-    height: 200px;
+
+h3 {
+    font-size: 15px;
+    /* background-color: */
+}
+
+.movieList {
+    margin-left:15px;
+    font-size: 15px;
+
 }

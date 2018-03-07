@@ -48,12 +48,7 @@ if(travel === 'mexico') {
   alert('nah');
 }
 
-// var stateOfBirth = parseInt(prompt('what state do you think I was born in?'));
-// if(stateOfBirth === 'Washington') {
-//   alert('correct you are my friend');
-// } else{
-//   alert('nope!, try again! Hint we are famouse for apples.');
-// }
+
 
 // if(first condition) {
 //     do this;
