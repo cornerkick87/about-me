@@ -6,3 +6,11 @@ h1 {
     text-align: center;
     font-size: 40px;
 }
+h2 {
+    text-align: center;
+    font-size: 70px;
+}
+body {
+    /* background-image:("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShM9yZpvrHAWUFgStcexrjVoGvmnp-v7ipxiuw_Pms7igbcDSFIg")  */
+    height: 200px;
+}

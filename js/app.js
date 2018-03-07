@@ -12,7 +12,7 @@
 
 //my five questions
 
-var preferredSeason = parseInt(prompt('Do you think my favorite time of year is winter?'));
+var preferredSeason = prompt('Do you think my favorite time of year is winter?  please answer yes or no');
 if(preferredSeason === 'yes' || preferredSeason === 'Y') {
   alert('incorrect');
 } else{
@@ -20,26 +20,40 @@ if(preferredSeason === 'yes' || preferredSeason === 'Y') {
 }
 
 
-var petQuestion = parseInt(prompt('do I own 1 pets?'));
-if(petQuestion === 'yes' || petQuestion === 'Y' || petQuestion === 'yeah') {
+var petQuestion = prompt('how many pets do I have I have?');
+if(parseInt(petQuestion) === 1 ) {
   alert('correct!');
 } else{
-  alert('nope!, try again!');
+  alert('nope!');
 }
 
-var myAge = parseInt(prompt('do you think im older then 30? please enter "yes or "no')).toLowerCase();
-if(myAge === 'yes' || myAge === 'y') {
+var myAge = prompt('do you think im older then 30? please enter "yes or "no');
+if(myAge.toLowerCase() === 'yes' || myAge === 'y') {
   alert('that is correct');
-} else if {
-  alert("I am older");
+} else {
+  alert('I am older');
 }
 
-var stateOfBirth = parseInt(prompt('what state do you think I was born in?'));
-if(stateOfBirth === 'Washington') {
-  alert('correct you are my friend');
-} else{
-  alert('nope!, try again! Hint we are famouse for apples.');
+var favSport = prompt('Which sport do you think I like most?');
+if(favSport === 'soccer' || favSport === 'tennis') {
+  alert('You bet it is!!!!');
+} else {
+  alert('hell no!');
 }
+
+var travel = prompt('Where was the last country I visited');
+if(travel === 'mexico') {
+  alert('SI!');
+} else {
+  alert('nah');
+}
+
+// var stateOfBirth = parseInt(prompt('what state do you think I was born in?'));
+// if(stateOfBirth === 'Washington') {
+//   alert('correct you are my friend');
+// } else{
+//   alert('nope!, try again! Hint we are famouse for apples.');
+// }
 
 // if(first condition) {
 //     do this;
