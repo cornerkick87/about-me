@@ -3,7 +3,7 @@
 //Question 1;
 function seasonQuestion () {
   var preferredSeason = prompt('Do you think my favorite time of year is winter?  please answer yes or no');
-  
+
   if(preferredSeason === 'yes' || preferredSeason === 'Y') {
     alert('incorrect');
     console.log('incorrect');
@@ -13,7 +13,7 @@ function seasonQuestion () {
   }
 }
 
-// console.log(seasonQuestion());
+console.log(seasonQuestion());
 
 //Question 2
 function numberOfPets () {
@@ -27,31 +27,29 @@ function numberOfPets () {
   }
 }
 
-// console.log(numberOfPets());
+console.log(numberOfPets());
 
 //Question 3
 function olderThan30 () {
-  response = prompt('do you think im older then 30? please enter "yes or "no');
-  
-  if(response.toLowerCase() === 'yes' || response.toLowerCase() === 'y') {
+  var ageGuess = prompt('do you think im older then 30? please enter "yes or "no');
+  if(ageGuess.toLowerCase() === 'yes' || ageGuess.toLowerCase() === 'y') {
     alert('that is correct');
     console.log('that is correct');
-  } else if (response.toLowerCase() === 'no' || response.toLowerCase() === 'n') {
+  } else if (ageGuess.toLowerCase() === 'no' || ageGuess.toLowerCase() === 'n') {
     alert('I am older');
     console.log('I am older');
   // } else {
   //   alert ('please respond yes or no');
-  //   response = prompt('do you think im older then 30? please enter "yes or "no'); *how do we loop this prompt
+  //   ageGuess = prompt('do you think im older then 30? please enter "yes or "no'); *how do we loop this prompt
   }
 }
 
 console.log(olderThan30('yes'));
 
 //Question 4.
-
 function sportsQuestion() {
-  string = prompt('Which sport do you think I like most?');
-  if(string === 'soccer' || string === 'tennis') {
+  var sportsGuess = prompt('Which sport do you think I like most?');
+  if(sportsGuess === 'soccer' || sportsGuess === 'tennis') {
     alert('You bet it is!!!!');
     console.log('You bet it is!');
   } else {
@@ -59,6 +57,8 @@ function sportsQuestion() {
     console.log('hell no');
   }
 }
+
+console.log(sportsQuestion());
 
 // Question 5
 function countryVisit () {
@@ -72,28 +72,42 @@ function countryVisit () {
   }
 }
 
-var easyCode = prompt('What is my favorite type of code to write?');
-if(easyCode === 'javascript' || easyCode === 'html') {
-  alert('Not yet, but hey that\'s why I came to codefellows');
-  console.log('Not yet but that\'s why I came to codefellow');
-} else{
-  alert('You guessed it!');
-  console.log('You guessed it!');
+console.log(countryVisit());
+
+//Question 6
+function favCode() {
+  var easyCode = prompt('What is my favorite type of code to write?');
+  if(easyCode === 'javascript' || easyCode === 'html') {
+    alert('Not yet, but hey that\'s why I came to codefellows');
+    console.log('Not yet but that\'s why I came to codefellow');
+  } else{
+    alert('You guessed it!');
+    console.log('You guessed it!');
+  }
 }
-//working one last question have syntax errors
-// function newFunction() {
-//       var askAgain = true;
-      
-//   var askAgain = true;
-// while (askAgain === true) {
-//   var countryMusic = prompt('number of country songs i like?');
-        
-//   if (parseInt(countryMusic) === 0) {
-//     alert('correct!');
-//     console.log('correct');
-//     askAgain = false;
-//   }
-//   // } else {
-//   //   alert('nope!');
-//   //   console.log('nope!');
-//   // }
+
+console.log(favCode());
+
+//Question 7: working one last question have syntax errors
+function countryMusic() {
+  var questionCount = 6;
+  var musicArray = ['Zac Brown Band', 'Blake Shelton', 'Keith Urban', 'Carrie Underwood'];
+  while (questionCount > 0) {
+    var countryGuess = prompt('Which country artists do I like?');
+
+    for (var i = 0; i < musicArray.length; i++) {
+      if (countryGuess === musicArray[i]) {
+        alert ('correct');
+        questionCount = 0;
+        break;
+      }
+    }
+
+    var indicator = questionCount -1;
+    alert ('Incorrect ' + indicator + ' questions left');
+
+    questionCount--;
+  }
+}
+
+console.log(countryMusic());
