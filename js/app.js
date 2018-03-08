@@ -1,14 +1,19 @@
 'use strict';
 
-var preferredSeason = prompt('Do you think my favorite time of year is winter?  please answer yes or no');
+//Question 1
+function seasonQuestion() {
+  var preferredSeason = prompt('Do you think my favorite time of year is winter?  please answer yes or no');
 
-if(preferredSeason === 'yes' || preferredSeason === 'Y') {
-  alert('incorrect');
-  console.log('incorrect');
-} else{
-  alert('your right!');
-  console.log('your right!');
+  if(preferredSeason === 'yes' || preferredSeason === 'Y') {
+    alert('incorrect');
+    console.log('incorrect');
+  } else{
+    alert('your right!');
+    console.log('your right!');
+  }
 }
+
+console.log(seasonQuestion());
 
 var petQuestion = prompt('how many pets do I have I have?');
 if(parseInt(petQuestion) === 1 ) {
@@ -58,17 +63,16 @@ if(easyCode === 'javascript' || easyCode === 'html') {
 // function newFunction() {
 //       var askAgain = true;
       
-        var askAgain = true;
-      while (askAgain === true) {
-        var countryMusic = prompt('number of country songs i like?');
+//   var askAgain = true;
+// while (askAgain === true) {
+//   var countryMusic = prompt('number of country songs i like?');
         
-        if (parseInt(countryMusic) === 0) {
-          alert('correct!');
-          console.log('correct');
-          askAgain = false;
-        }
-        } else {
-          alert('nope!');
-          console.log('nope!');
-        }
-      
+//   if (parseInt(countryMusic) === 0) {
+//     alert('correct!');
+//     console.log('correct');
+//     askAgain = false;
+//   }
+//   // } else {
+//   //   alert('nope!');
+//   //   console.log('nope!');
+//   // }
