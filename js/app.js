@@ -1,15 +1,7 @@
 'use strict';
 
-//if/else
-
-//peudocode
-//if(some condition is met) {
-//do this
-//};
-//else {
-//do something else
-//};
 var preferredSeason = prompt('Do you think my favorite time of year is winter?  please answer yes or no');
+
 if(preferredSeason === 'yes' || preferredSeason === 'Y') {
   alert('incorrect');
   console.log('incorrect');
@@ -17,7 +9,6 @@ if(preferredSeason === 'yes' || preferredSeason === 'Y') {
   alert('your right!');
   console.log('your right!');
 }
-
 
 var petQuestion = prompt('how many pets do I have I have?');
 if(parseInt(petQuestion) === 1 ) {
@@ -58,25 +49,26 @@ if(travel === 'mexico') {
 var easyCode = prompt('What is my favorite type of code to write?');
 if(easyCode === 'javascript' || easyCode === 'html') {
   alert('Not yet, but hey that\'s why I came to codefellows');
-  console.log('Not yet but that\'s why I came to codefellow') ; 
+  console.log('Not yet but that\'s why I came to codefellow');
 } else{
   alert('You guessed it!');
   console.log('You guessed it!');
 }
-
-var favCountryMusic = prompt('number of country songs I like');
-if(parseInt(favCountryMusic) === 1) {
-  alert('correct!');
-  console.log('correct');
-} else{
-  alert('nope!');
-  console.log('nope!');
-}
-
-// if(first condition) {
-//     do this;
-// } else if(second condition) {
-//     do this;
-// } else{
-//     do this;
-// }
+//working one last question have syntax errors
+// function newFunction() {
+//       var askAgain = true;
+      
+        var askAgain = true;
+      while (askAgain === true) {
+        var countryMusic = prompt('number of country songs i like?');
+        
+        if (parseInt(countryMusic) === 0) {
+          alert('correct!');
+          console.log('correct');
+          askAgain = false;
+        }
+        } else {
+          alert('nope!');
+          console.log('nope!');
+        }
+      
