@@ -1,6 +1,6 @@
 body {
     
-    background-color: rgb(238, 116, 29);
+    background-color: rgb(203,	235,	240);
     border: double;
     margin: 5px;
     
@@ -8,6 +8,7 @@ body {
 h1 {
     text-align: center;
     font-size: 45px;
+    
 }
 
 h2 {
@@ -17,11 +18,14 @@ h2 {
 
 h3 {
     font-size: 15px;
-    /* background-color: */
+    margin-left:150px
 }
 
 .movieList {
-    margin-left:15px;
+    margin-left:300px;
     font-size: 15px;
-
+}
+img {
+  margin-left: 165px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
